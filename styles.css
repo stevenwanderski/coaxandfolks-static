@@ -1,0 +1,424 @@
+/* line 1, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Arial';
+  box-sizing: border-box;
+}
+
+/* line 8, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+body {
+  color: #333;
+}
+
+/* line 12, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #333;
+}
+
+/* line 17, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.main--title {
+  margin-bottom: 50px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  /* line 17, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+  .main--title {
+    font-size: 40px;
+  }
+}
+/* line 28, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.main--title em {
+  color: #ec384a;
+}
+
+/* line 33, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* line 37, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+a {
+  color: #ec384a;
+  text-decoration: none;
+}
+
+/* line 42, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 46, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* line 53, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 57, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* line 65, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+aside {
+  flex-basis: 300px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+/* line 71, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+em {
+  font-style: normal;
+  color: #ec384a;
+}
+
+/* line 76, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+hr {
+  border: 0;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 20px;
+}
+
+/* line 82, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 88, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 700px) {
+  /* line 88, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 101, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.container__flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 700px) {
+  /* line 101, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+  .container__flex {
+    flex-wrap: wrap;
+  }
+}
+
+/* line 110, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.container__flex-left {
+  display: flex;
+}
+/* line 113, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.container__flex-left > div {
+  margin-right: 30px;
+}
+
+/* line 118, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.container__align-items {
+  align-items: center;
+}
+
+/* line 122, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.main-block {
+  margin-bottom: 40px;
+}
+
+/* line 126, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 133, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 142, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.info-section {
+  padding: 60px 0;
+  background: #fbfbfb;
+}
+
+/* line 147, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.main--image {
+  border-radius: 5px;
+}
+
+/* line 151, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.page {
+  padding: 50px 0;
+}
+
+/* line 156, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.main--title h1 {
+  margin-bottom: 50px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  /* line 156, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+  .main--title h1 {
+    font-size: 40px;
+  }
+}
+/* line 167, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_base.scss */
+.main--title h1 em {
+  color: #ec384a;
+}
+
+/* line 1, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_header.scss */
+.header {
+  position: relative;
+  overflow: hidden;
+  background: #333;
+}
+
+/* line 28, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_header.scss */
+.header--logo__full {
+  width: 230px;
+  padding: 30px 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 35, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_header.scss */
+.header--logo img {
+  max-width: 100%;
+}
+
+/* line 39, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_header.scss */
+.header--link {
+  color: #fff;
+  margin-right: 35px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* line 45, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_header.scss */
+.header--link:hover {
+  text-decoration: none;
+  color: #eee;
+}
+
+/* line 51, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_header.scss */
+.header--button {
+  padding: 14px 28px;
+  color: #fff;
+  font-size: 18px;
+  background: #ec384a;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+/* line 59, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_header.scss */
+.header--button:hover {
+  text-decoration: none;
+  background: #ea2135;
+}
+
+/* line 65, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_header.scss */
+.header--control {
+  position: relative;
+  padding-left: 30px;
+  height: 20px;
+}
+
+/* line 71, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_header.scss */
+.header--control:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+}
+
+/* line 1, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+nav {
+  background: #eee;
+  display: none;
+}
+/* line 5, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+nav.open {
+  display: block;
+}
+/* line 9, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+nav ul {
+  text-align: center;
+}
+@media (max-width: 700px) {
+  /* line 9, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+  nav ul {
+    text-align: left;
+  }
+}
+/* line 17, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+nav li {
+  display: inline-block;
+}
+@media (max-width: 700px) {
+  /* line 17, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+  nav li {
+    display: block;
+  }
+}
+/* line 25, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+nav a {
+  padding: 20px 30px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+}
+@media (max-width: 700px) {
+  /* line 25, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+  nav a {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+}
+/* line 38, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+nav a:hover {
+  text-decoration: none;
+}
+@media (min-width: 700px) {
+  /* line 38, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+  nav a:hover {
+    background: #ddd;
+  }
+}
+
+/* line 48, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+.nav--contact {
+  color: #ec384a;
+}
+@media (min-width: 700px) {
+  /* line 48, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_nav.scss */
+  .nav--contact {
+    display: none;
+  }
+}
+
+/* line 1, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_footer.scss */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+/* line 7, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_footer.scss */
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+  /* line 7, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_footer.scss */
+  .footer ul {
+    display: block;
+  }
+}
+
+/* line 16, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_footer.scss */
+.footer li {
+  list-style: none;
+  padding-right: 20px;
+}
+@media (max-width: 700px) {
+  /* line 16, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_footer.scss */
+  .footer li {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 25, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_footer.scss */
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 30, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_footer.scss */
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 34, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_footer.scss */
+.footer--block:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+/* line 1, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_aside-block.scss */
+.aside-block {
+  border-radius: 5px;
+  margin-bottom: 50px;
+  border: solid 1px #ddd;
+  padding: 14px 20px;
+  background: #fff;
+}
+
+/* line 9, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_aside-block.scss */
+.aside-block--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid #eee 1px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+/* line 18, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_aside-block.scss */
+.aside-block--title {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 45%;
+}
+
+/* line 25, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_aside-block.scss */
+.aside-block--link {
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 45%;
+}
+
+/* line 1, /Users/stevenwanderski/Desktop/dev/coaxandfolks/app/assets/stylesheets/_share-block.scss */
+.share-block:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.share-block {
+  display: flex;
+  justify-content: center;
+}
